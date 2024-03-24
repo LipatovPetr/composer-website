@@ -16,7 +16,7 @@ import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
 import Modal from "../../../components/Modal/Modal";
 import Preloader from "../../../components/Preloader/Preloader";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const YouTubePlayer = React.lazy(
