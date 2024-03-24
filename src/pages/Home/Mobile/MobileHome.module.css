@@ -7,14 +7,14 @@
 
 .image {
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 5%;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transform: scale(1.3);
+  transform: scale(1.35);
   border: solid;
 }
 
