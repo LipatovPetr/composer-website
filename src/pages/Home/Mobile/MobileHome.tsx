@@ -36,6 +36,12 @@ function MobileHome() {
 
   return (
     <div className={s.page} ref={pageRef}>
+      <div className={s.nav}>
+        <div className={s.button}>Showreel</div>
+        <div className={s.button}>Featured Work</div>
+        <div className={s.button}>Albums</div>
+        <div className={s.button}>Info</div>
+      </div>
       <div
         className={s.image}
         style={{ backgroundImage: `url(${background_image_1_src})` }}
