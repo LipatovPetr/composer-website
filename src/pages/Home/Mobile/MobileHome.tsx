@@ -31,7 +31,7 @@ function MobileHome() {
     <div className={s.page} ref={pageRef}>
       <div className={s.titleContainer}>
         <div className={s.name}>Liza Tikhonova</div>
-        <div className={s.title}>Composer</div>
+        <div className={s.job}>composer</div>
       </div>
       <div className={s.nav}>
         <div className={s.button}>Showreel</div>

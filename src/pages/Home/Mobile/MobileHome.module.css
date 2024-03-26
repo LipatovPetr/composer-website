@@ -6,7 +6,22 @@
 }
 
 .titleContainer {
-  border: 1px solid red;
+  margin-top: 8px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 32px;
+  text-align: right;
+}
+
+.job {
+  color: #e7397a;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 24px;
+  text-align: right;
 }
 
 .image {
