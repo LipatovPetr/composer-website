@@ -1,16 +1,5 @@
 import s from "./MobileHome.module.css";
-import React, {
-  useRef,
-  RefObject,
-  useEffect,
-  useState,
-  Suspense,
-  useLayoutEffect,
-} from "react";
-// import background_image_1_src from "../../../assets/images/background_big_blue.png";
-// import background_image_2_src from "../../../assets/images/background_big_pink.png";
-// import background_image_3_src from "../../../assets/images/background_small_blue.png";
-// import background_image_4_src from "../../../assets/images/background_small_pink.png";
+import React, { useRef, RefObject, useState, Suspense } from "react";
 
 import flower1_src from "../../../assets/images/flower1.png";
 import flower2_src from "../../../assets/images/flower2.png";
@@ -40,6 +29,10 @@ function MobileHome() {
 
   return (
     <div className={s.page} ref={pageRef}>
+      <div className={s.titleContainer}>
+        <div className={s.name}>Liza Tikhonova</div>
+        <div className={s.title}>Composer</div>
+      </div>
       <div className={s.nav}>
         <div className={s.button}>Showreel</div>
         <div className={s.button}>Featured Work</div>
@@ -58,22 +51,6 @@ function MobileHome() {
         className={s.image}
         style={{ backgroundImage: `url(${flower3_src})` }}
       />
-      {/* <div
-        className={s.image}
-        style={{ backgroundImage: `url(${background_image_1_src})` }}
-      />
-      <div
-        className={s.image}
-        style={{ backgroundImage: `url(${background_image_3_src})` }}
-      />
-      <div
-        className={s.image}
-        style={{ backgroundImage: `url(${background_image_2_src})` }}
-      />
-      <div
-        className={s.image}
-        style={{ backgroundImage: `url(${background_image_4_src})` }}
-      /> */}
       {isPopupOpened && (
         <Modal setPopupState={setPopupState}>
           <Suspense fallback={<Preloader content={"🐥"} />}>
