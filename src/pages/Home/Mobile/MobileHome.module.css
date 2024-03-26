@@ -13,14 +13,14 @@
 
 .name {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 32px;
+  font-size: 24px;
   text-align: right;
 }
 
 .job {
   color: #e7397a;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 24px;
+  font-size: 16px;
   text-align: right;
 }
 
