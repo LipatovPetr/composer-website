@@ -7,10 +7,14 @@ import React, {
   Suspense,
   useLayoutEffect,
 } from "react";
-import background_image_1_src from "../../../assets/images/background_big_blue.png";
-import background_image_2_src from "../../../assets/images/background_big_pink.png";
-import background_image_3_src from "../../../assets/images/background_small_blue.png";
-import background_image_4_src from "../../../assets/images/background_small_pink.png";
+// import background_image_1_src from "../../../assets/images/background_big_blue.png";
+// import background_image_2_src from "../../../assets/images/background_big_pink.png";
+// import background_image_3_src from "../../../assets/images/background_small_blue.png";
+// import background_image_4_src from "../../../assets/images/background_small_pink.png";
+
+import flower1_src from "../../../assets/images/flower1.png";
+import flower2_src from "../../../assets/images/flower2.png";
+import flower3_src from "../../../assets/images/flower3.png";
 
 import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
@@ -44,6 +48,18 @@ function MobileHome() {
       </div>
       <div
         className={s.image}
+        style={{ backgroundImage: `url(${flower1_src})` }}
+      />{" "}
+      <div
+        className={s.image}
+        style={{ backgroundImage: `url(${flower2_src})` }}
+      />{" "}
+      <div
+        className={s.image}
+        style={{ backgroundImage: `url(${flower3_src})` }}
+      />
+      {/* <div
+        className={s.image}
         style={{ backgroundImage: `url(${background_image_1_src})` }}
       />
       <div
@@ -57,7 +73,7 @@ function MobileHome() {
       <div
         className={s.image}
         style={{ backgroundImage: `url(${background_image_4_src})` }}
-      />
+      /> */}
       {isPopupOpened && (
         <Modal setPopupState={setPopupState}>
           <Suspense fallback={<Preloader content={"🐥"} />}>
