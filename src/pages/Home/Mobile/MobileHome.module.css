@@ -6,7 +6,7 @@
 }
 
 .titleContainer {
-  margin-top: 4px;
+  margin-top: 16px;
   margin-right: 16px;
   font-weight: 600;
 }
@@ -39,8 +39,9 @@
 }
 
 .nav {
+  border: 1px solid red;
   margin-left: 16px;
-  margin-top: 350px;
+  margin-top: 50vh;
   font-family: "IBM Plex Mono", monospace;
   font-size: 32px;
   font-weight: 600;
