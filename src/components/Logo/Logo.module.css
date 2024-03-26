@@ -1,0 +1,21 @@
+.titleContainer {
+  color: inherit;
+  display: block;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 24px;
+  text-align: right;
+}
+
+.job {
+  color: #e7397a;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  text-align: right;
+}

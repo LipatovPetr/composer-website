@@ -5,7 +5,11 @@ import Layout from "../Layout/Layout";
 import Preloader from "../Preloader/Preloader";
 
 const Home = lazy(() => import("../../pages/Home/Home"));
-const Portfolio = lazy(() => import("../../pages/Portfolio/Portfolio"));
+const Albums = lazy(() => import("../../pages/Albums/Albums"));
+const Info = lazy(() => import("../../pages/Info/Info"));
+const FeaturedWork = lazy(
+  () => import("../../pages/FeaturedWork/FeaturedWork")
+);
 
 function App() {
   return (
@@ -19,11 +23,30 @@ function App() {
             </Suspense>
           }
         />
+
         <Route
-          path="/portfolio"
+          path="/albums"
           element={
             <Suspense fallback={<Preloader content={"🦙"} />}>
-              <Portfolio />
+              <Albums />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/work"
+          element={
+            <Suspense fallback={<Preloader content={"🦙"} />}>
+              <FeaturedWork />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/info"
+          element={
+            <Suspense fallback={<Preloader content={"🦙"} />}>
+              <Info />
             </Suspense>
           }
         />

@@ -11,7 +11,7 @@ import playSrc from "../../assets/images/play-button.svg";
 import pauseSrc from "../../assets/images/pause-icon.svg";
 import { formatTime } from "../../utils/formatTime";
 import { AudioPlayerViewProps } from "./types";
-import { PlayerContext } from "../../pages/Portfolio/Mobile/PortfolioMobile";
+import { PlayerContext } from "../../pages/Albums/Mobile/PortfolioMobile";
 import PlayerLoader from "./AudioPlayerViewPreloader/AudioPlayerPreloader";
 
 const AudioPlayerView = forwardRef(
